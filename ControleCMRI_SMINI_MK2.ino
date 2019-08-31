@@ -250,15 +250,11 @@ void CarregaValoresEntradas() {
   for (byte i = 0; i < 2; i++) {
     //Carrega Valor MCP23017
     byte NovoValor = RetornaValorEntradaMCP23017(i);
-    cmrinode.set_byte(i, NovoValor);
-    
+        
     //Verifica Mudanca no Valor
     if (NovoValor != ValorEntradas[i]) {
+      cmrinode.set_byte(i, ~NovoValor);
       ValorEntradas[i] = NovoValor;
-      //SerialRs485.print("Ent ");
-      //SerialRs485.print(i);
-      //SerialRs485.print(":");
-      //SerialRs485.println(NovoValor,BIN);
     }
   }
 }
