@@ -10,7 +10,8 @@
 //      Modo Configuração automatico quando pino 12 em nivel Baixo;
 //      Novo menu de configuração detalhado;
 // 2.1: Inversao dos Valores Enviados das Entradas;
-//
+#define VERSAOATUAL 2.1
+
 //Copyright Notes Interface 48 Controles:
 // O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRAM", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO.  
 // EM NENHUMA CIRCUNSTÂNCIA, O AUTOR/TITULAR DE DIREITOS AUTORAIS SE RESPONSABILIZA POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRA RESPONSABILIDADE, 
@@ -51,7 +52,6 @@ Adafruit_MCP23017 mcp0;
 Adafruit_MCP23017 mcp1;
 Adafruit_MCP23017 mcp2;
 
-#define VERSAOATUAL 2.0
 #define MIN_PULSE_WIDTH       650
 #define MAX_PULSE_WIDTH       2350
 #define DEFAULT_PULSE_WIDTH   1500
