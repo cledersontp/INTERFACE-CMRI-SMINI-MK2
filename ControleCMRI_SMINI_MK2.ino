@@ -1,15 +1,15 @@
 // 
-// INTERFACE 48 CONTROLES CMRI SMINI - Versao 2.0
+// INTERFACE 48 CONTROLES CMRI SMINI - Versao 2.1
 // By Clederson T. Przybysz - clederson_p@yahoo.com.br
 // expressoarduino.blogspot.com
-// Criação: Fevereiro/2019 
+// Criação: Fevereiro/2019 - Revisão: Agosto/2019
 //
 // Release Note: 
 // 2.0: Modulos MCP2307 para Entradas e Saidas I2C
 //      Controle AMV por Servos com modulo I2C
 //      Modo Configuração automatico quando pino 12 em nivel Baixo;
 //      Novo menu de configuração detalhado;
-
+// 2.1: Inversao dos Valores Enviados das Entradas;
 //
 //Copyright Notes Interface 48 Controles:
 // O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRAM", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO.  
