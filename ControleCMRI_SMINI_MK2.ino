@@ -10,7 +10,8 @@
 //      Modo Configuração automatico quando pino 12 em nivel Baixo;
 //      Novo menu de configuração detalhado;
 // 2.1: Inversao dos Valores Enviados das Entradas;
-#define VERSAOATUAL 2.1
+// 2.2: Correção Configuração Numero do Node;
+#define VERSAOATUAL 2.2
 
 //Copyright Notes Interface 48 Controles:
 // O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRAM", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU IMPLÍCITA, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO.  
@@ -367,7 +368,7 @@ void MenuConfiguracao() {
   }
   
   // 10.Endereco Node
-  else if (EtapaConfig==10&&vRecebido>=0&&vRecebido<2) {
+  else if (EtapaConfig==10&&vRecebido>=0&&vRecebido<126) {
     //Grava Endereco Node na EEPROM 1 e Volta Menu Inicial
     EEPROM.write(1, vRecebido);  
     EnderecoNode=vRecebido;
